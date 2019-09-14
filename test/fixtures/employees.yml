@@ -3,7 +3,23 @@
 one:
   name: MyString
   password: MyString
+  address: MyString
+  blood_type: MyString
+  sex: MyString
+  birthday: 2019-09-14
+  emergency_contact: 1
+  cellphone_number: 1
+  photo_url: MyString
+  line_id: MyString
 
 two:
   name: MyString
   password: MyString
+  address: MyString
+  blood_type: MyString
+  sex: MyString
+  birthday: 2019-09-14
+  emergency_contact: 1
+  cellphone_number: 1
+  photo_url: MyString
+  line_id: MyString
