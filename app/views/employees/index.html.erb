@@ -61,7 +61,7 @@
                             <td><%= employee.cellphone_number%></td>
                             <td><%= employee.photo_url%></td>
                             <td><%= employee.line_id%></td>
-                            <td><a href="/employees/<%=employee.id%>" data-method="delete">削除</a></td>
+                            <td><a href="/employees/<%=employee.id%>" data-method="delete">削除</a><a href="/employees/<%=employee.id%>/edit">編集</a></td>
                         </tr>
                         
                     <% end%>
