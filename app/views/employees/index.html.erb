@@ -1,5 +1,5 @@
 <h3>employeeリスト（employeeでのトップページ）</h3>
-<a href="/employees_new" class="btn btn-primary">さこぶろぐ</a>
+<a href="/employees_new" class="btn btn-primary">新規社員登録フォーム</a>
 
 
 
@@ -28,6 +28,40 @@
                   <li class="active">社員データベース</li>
                 </ol>
             </div>
-            
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>パスワード</th>
+                        <th>氏名</th>
+                        <th>住所</th>
+                        <th>血液型</th>
+                        <th>性別</th>
+                        <th>生年月日</th>
+                        <th>緊急連絡先</th>
+                        <th>携帯番号</th>
+                        <th>証明写真</th>
+                        <th>LINEのID</th>
+                    </tr>
+                </thead>
+                    <% @employees.each do |employee| %>
+                        <tr>
+                            <td><%= employee.password%></td>
+                            <td><%= employee.name%></td>
+                            <td><%= employee.address%></td>
+                            <td><%= employee.blood_type%></td>
+                            <td><%= employee.sex%></td>
+                            <td><%= employee.birthday%></td>
+                            <td><%= employee.emergency_contact%></td>
+                            <td><%= employee.cellphone_number%></td>
+                            <td><%= employee.photo_url%></td>
+                            <td><%= employee.line_id%></td>
+                            
+                        </tr>
+                    <% end%>
+            </table>
+    </div>
+    <div class="btn_position">
+        <a href=" /new" class="btn btn-primary">新規ユーザー登録</a>
+    </div>
 
 </div>

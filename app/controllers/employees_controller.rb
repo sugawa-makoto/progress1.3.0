@@ -1,6 +1,6 @@
 class EmployeesController < ApplicationController
     def index
-       
+       @employees = Employee.all
     end
     
     def new
@@ -8,8 +8,8 @@ class EmployeesController < ApplicationController
     end
     
     def create
-        Employee.create(name:params["users"]["title"],body:params["users"]["body"])
-        redirect_to "/adminemployee"
+        Employee.create(line_id:params["employees"]["line_id"],photo_url:params["employees"]["photo_url"],password:params["employees"]["password"],name:params["employees"]["name"],address:params["employees"]["address"],blood_type:params["employees"]["blood_type"],sex:params["employees"]["sex"],birthday:params["employees"]["birthday"],emergency_contact:params["employees"]["emergency_contact"],cellphone_number:params["employees"]["cellphone_number"])
+        redirect_to "/employees_index"
     end
     
     def destroy
